@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,200;1,400" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>:. Jaqueline Romero</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Jaqueline Romero">
+        </div>
+        <ul>
+            <li>
+                <a href="mailto:jaquelineromero@protonmail.com">LinkedIn</a>
+            </li> 
+            <li>
+                <a href="https://github.com/jaqromero/">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jaqueline-romero/">Email</a>
+            </li>            
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Jaqueline Romero</h1>
+                <h5>Full-Stack Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display:none;" id="about">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ex molestiae molestias nesciunt delectus vel totam eos culpa magnam, sequi voluptate, eaque praesentium voluptas nostrum, autem quam voluptates modi quae.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Get in touch with me</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Your Email">
+                    <button>Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+  
+    <script>
+        function displayAbout(){
+            var arrow=document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display=document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
